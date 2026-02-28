@@ -1,0 +1,146 @@
+.timeline-section {
+    position: relative;
+    background-color: var(--color-bg);
+    padding-top: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
+}
+
+/* Desktop Styles */
+.timeline-desktop {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1000 / 600;
+    /* Lock aspect ratio to match SVG viewBox */
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.timeline-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.timeline-item {
+    position: absolute;
+    z-index: 2;
+    transform: translateY(0);
+    max-width: 250px;
+}
+
+.timeline-date {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin-bottom: 0rem;
+    font-weight: 300;
+}
+
+.timeline-title {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Mobile Styles */
+.timeline-mobile {
+    display: none;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+.timeline-dot-desktop {
+    transition: fill 0.3s ease;
+    transform-origin: center;
+    /* Ensure pulse scales from center */
+    /* Starting state handles by React inline style (rgba white) or default here */
+}
+
+.timeline-dot-desktop.active {
+    fill: var(--color-accent);
+    /* Solid white when active */
+    animation: pulse 0.6s ease-out;
+    /* Play once when activated, or infinite if requested. Taking 'pulse' to mean transient interaction mostly, but 'active' state usually implies permanent change. Let's make it pulsate ONCE when class is added. */
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 900px) {
+    .timeline-desktop {
+        display: none;
+    }
+
+    .timeline-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-sm) 0;
+    }
+
+    .timeline-mobile-item {
+        display: flex;
+        gap: var(--spacing-md);
+        position: relative;
+    }
+
+    .timeline-mobile-line {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 20px;
+    }
+
+    .timeline-dot {
+        width: 12px;
+        height: 12px;
+        background-color: var(--color-primary);
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin-top: 6px;
+        /* Align with first line of text roughly */
+    }
+
+    .timeline-connector {
+        width: 2px;
+        background-color: rgba(255, 255, 255, 0.3);
+        flex-grow: 1;
+        margin-top: 4px;
+        min-height: 50px;
+    }
+
+    .timeline-mobile-content {
+        padding-bottom: var(--spacing-md);
+    }
+
+    .timeline-mobile-content .timeline-date {
+        font-size: 1rem;
+        opacity: 0.9;
+    }
+
+    .timeline-mobile-content .timeline-title {
+        font-size: 1.25rem;
+    }
+}
