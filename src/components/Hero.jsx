@@ -2,6 +2,7 @@ import './Hero.css'
 import logo from '../assets/logo-bando.png'
 import mapDesktop from '../assets/barriera-map-line.png'
 import mapMobile from '../assets/barriera-map.png'
+import ScrollingBanner from './ScrollingBanner'
 
 const Hero = () => {
     return (
@@ -27,6 +28,9 @@ const Hero = () => {
                         le pratiche sociali e creative, le forme di convivenza e i <span className="highlight-text">futuri possibili</span>.
                     </p>
                 </div>
+
+                {/* Scrolling Banner */}
+                <ScrollingBanner />
 
                 {/* Map - Third Element */}
                 <div className="hero-map-container fade-in-up delay-2">

@@ -1,4 +1,5 @@
 import './About.css'
+import ScrollingBanner from './ScrollingBanner'
 
 const About = () => {
     return (
@@ -8,7 +9,6 @@ const About = () => {
                     {/* Header */}
                     <h2 className="section-title">Call to Action <span className="text-accent">BarriEra / BarriE’</span></h2>
                     <h3 className="section-subtitle">Residenza artistica per giovani registi | <span className="text-white">Barriera di Milano (Torino)</span></h3>
-
                     <div className="text-block">
                         <p>
                             <span className="highlight-text">Barriera di Milano</span> è un quartiere che porta nel nome l’idea di confine, ma che nella vita quotidiana funziona più come un sistema di attraversamenti: lingue che si incrociano, generazioni che convivono, memorie che restano e visioni che spingono in avanti. <strong>BarriEra - BarriE’</strong> nasce da qui: dall’urgenza di trasformare il cinema in uno strumento di ascolto, di relazione e di restituzione.
@@ -23,7 +23,13 @@ const About = () => {
                             <strong>BarriEra / BarriE’</strong> diventa così una residenza artistica e, insieme, un esperimento collettivo: una produzione dal basso che trasforma l’osservazione in partecipazione, e il set in uno spazio di relazione.
                         </p>
                     </div>
+                </div>
+            </div>
 
+            <ScrollingBanner direction="right" />
+
+            <div className="container" style={{ marginTop: 'var(--spacing-md)' }}>
+                <div className="about-content">
                     <div className="bando-grid">
                         <div className="bando-column">
                             <h4 className="column-title">Obiettivo della call</h4>

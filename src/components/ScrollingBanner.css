@@ -1,0 +1,57 @@
+/* Scrolling Banner */
+.scrolling-banner-container {
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    margin-top: var(--spacing-sm);
+}
+
+.scrolling-banner-wrapper {
+    display: flex;
+    height: 45px;
+    flex-wrap: nowrap;
+    border-bottom: 3px solid var(--color-accent);
+    border-top: 3px solid var(--color-accent);
+    align-items: center;
+}
+
+.scrolling-banner-wrapper-left {
+    animation: scroll-left 20s linear infinite;
+}
+
+.scrolling-banner-wrapper-right {
+    /* For right scroll, we start from -50% and go to 0% */
+    animation: scroll-right 20s linear infinite;
+    transform: translateX(-50%);
+}
+
+
+
+.scrolling-banner-img {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -1,7 +1,6 @@
 .about-section {
-    background-color: var(--color-bg);
+    background-color: transparent;
     border-top: 0px solid rgba(255, 255, 255, 0.05);
-    padding-bottom: var(--spacing-xl);
 }
 
 .about-content {
@@ -22,8 +21,8 @@
     font-size: 1.2rem;
     font-weight: 400;
     color: var(--color-secondary);
-    margin-bottom: var(--spacing-md);
-    border-bottom: 13px dotted #f25a2a;
+    /*margin-bottom: var(--spacing-md);
+    border-bottom: 13px dotted var(--color-accent);*/
     padding-bottom: var(--spacing-md);
 }
 
@@ -39,7 +38,7 @@
     font-size: 1.1rem;
     line-height: 1.6;
     color: #e0e0e0;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
 }
 
 .text-block p {

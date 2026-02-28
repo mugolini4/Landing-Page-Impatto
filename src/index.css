@@ -3,16 +3,16 @@
 
 :root {
   /* Colors - Blue/Red Palette */
-  --color-bg: #2559a9;
-  --color-surface: #1e4b8f;
+  --color-bg: #354F99;
+  --color-surface: #354F99;
   /* Slightly darker blue for gradients/surfaces */
   --color-primary: #ffffff;
   /* White text */
   --color-secondary: rgba(255, 255, 255, 1);
   /* Translucent white */
-  --color-accent: #f1592a;
+  --color-accent: #ec671a;
   /* Orange/Red accent */
-  --color-accent-glow: rgba(241, 89, 42, 0.4);
+  --color-accent-glow: rgba(237, 103, 26, 0.4);
 
   /* Typography */
   /* Fallback to geometric sans since 'Cy' is custom/unavailable. Outfit is a good match. */
@@ -53,6 +53,12 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /*background-color: var(--color-bg);*/
+  background-image: url('./assets/texture-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
 }
 
 h1,
@@ -114,4 +120,43 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/* Scrolling Banner */
+.scrolling-banner-container {
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  margin-top: var(--spacing-sm);
+}
+
+.scrolling-banner-wrapper {
+  display: flex;
+  height: 45px;
+  flex-wrap: nowrap;
+  animation: scroll-left 20s linear infinite;
+  border-bottom: 3px solid var(--color-accent);
+  border-top: 3px solid var(--color-accent);
+  align-items: center;
+}
+
+.scrolling-banner-img {
+  height: 30px;
+  /* Adjust as needed */
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }

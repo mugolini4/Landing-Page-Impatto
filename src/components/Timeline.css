@@ -1,6 +1,6 @@
 .timeline-section {
     position: relative;
-    background-color: var(--color-bg);
+    background-color: transparent;
     padding-top: var(--spacing-sm);
     padding-bottom: var(--spacing-sm);
 }
