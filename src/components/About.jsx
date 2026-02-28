@@ -1,7 +1,8 @@
 import './About.css'
 import ScrollingBanner from './ScrollingBanner'
+import './About.css'
 
-const About = () => {
+const About = ({ onOpenPopup }) => {
     return (
         <section id="about" className="section about-section">
             <div className="container">
@@ -101,7 +102,7 @@ const About = () => {
 
                         <div className="cta-container">
                             <p><strong>Scadenza: 28 Febbraio 2026</strong></p>
-                            <a href="#" target="_blank" className="btn btn-primary">Compila il form di candidatura</a>
+                            <a href="#" onClick={onOpenPopup} className="btn btn-primary">Compila il form di candidatura</a>
                         </div>
                     </div>
 

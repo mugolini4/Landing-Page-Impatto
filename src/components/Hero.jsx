@@ -4,7 +4,7 @@ import mapDesktop from '../assets/barriera-map-line.png'
 import mapMobile from '../assets/barriera-map.png'
 import ScrollingBanner from './ScrollingBanner'
 
-const Hero = () => {
+const Hero = ({ onOpenPopup }) => {
     return (
         <section className="hero-section">
             <div className="hero-container">
@@ -46,7 +46,7 @@ const Hero = () => {
                                 </a>
                             </li>
                             <li>
-                                Compila il <a href="#" target="_blank" className="highlight-link">form</a>
+                                Compila il <a href="#" onClick={onOpenPopup} className="highlight-link">form</a>
                             </li>
                             <li>Candidati singolarmente o in team</li>
                         </ol>
@@ -63,7 +63,7 @@ const Hero = () => {
                             </a>
                         </li>
                         <li>
-                            Compila il <a href="#" target="_blank" className="highlight-link">form</a>
+                            Compila il <a href="#" onClick={onOpenPopup} className="highlight-link">form</a>
                         </li>
                         <li>Candidati singolarmente o in team</li>
                     </ol>
