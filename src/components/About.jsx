@@ -30,7 +30,8 @@ const About = ({ onOpenPopup }) => {
 
             <div style={{
                 textAlign: 'center',
-                padding: 'var(--spacing-md)',
+                paddingTop: 'var(--spacing-md)',
+                paddingBottom: 'var(--spacing-md)',
             }}>
                 <p style={{ marginBottom: 'var(--spacing-md)' }}><strong>Scadenza: 15 Aprile 2026</strong></p>
                 <a href="#" onClick={onOpenPopup} className="btn btn-primary">Compila il form di candidatura</a>
@@ -106,7 +107,8 @@ const About = ({ onOpenPopup }) => {
 
                     <div style={{
                         textAlign: 'center',
-                        padding: 'var(--spacing-md)',
+                        paddingTop: 'var(--spacing-md)',
+                        paddingBottom: 'var(--spacing-md)',
                     }}>
                         <p style={{ marginBottom: 'var(--spacing-md)' }}><strong>Scadenza: 15 Aprile 2026</strong></p>
                         <a href="#" onClick={onOpenPopup} className="btn btn-primary">Compila il form di candidatura</a>

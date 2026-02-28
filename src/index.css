@@ -55,8 +55,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /*background-color: var(--color-bg);*/
   background-image: url('./assets/texture-bg.png');
-  background-size: cover;
-  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top left;
   background-attachment: fixed;
   background-blend-mode: overlay;
 }
@@ -120,43 +121,4 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-
-/* Scrolling Banner */
-.scrolling-banner-container {
-  width: 100vw;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  white-space: nowrap;
-  margin-top: var(--spacing-sm);
-}
-
-.scrolling-banner-wrapper {
-  display: flex;
-  height: 45px;
-  flex-wrap: nowrap;
-  animation: scroll-left 20s linear infinite;
-  border-bottom: 3px solid var(--color-accent);
-  border-top: 3px solid var(--color-accent);
-  align-items: center;
-}
-
-.scrolling-banner-img {
-  height: 30px;
-  /* Adjust as needed */
-  width: auto;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
 }
