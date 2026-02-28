@@ -60,8 +60,15 @@
     margin-top: var(--spacing-md);
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding-bottom: var(--spacing-sm);
-    border-bottom: 8px dotted var(--color-accent);
+    padding-bottom: var(--spacing-md);
+    /* Browser renders thick 'dotted' borders as squares. 
+       Use a repeating radial gradient to guarantee perfect circles instead. */
+    border-bottom: none;
+    background-image: radial-gradient(circle, var(--color-accent) 3px, transparent 3.5px);
+    background-size: 16px 8px;
+    /* Width of repeat, Height of dots */
+    background-repeat: repeat-x;
+    background-position: bottom left;
 }
 
 .column-title:first-child {
