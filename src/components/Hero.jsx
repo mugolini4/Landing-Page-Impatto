@@ -22,8 +22,7 @@ const Hero = ({ onOpenPopup }) => {
                         del un luogo che è spesso alla periferia dello sguardo.
                     </p>
                     <p className="hero-description">
-                        Cerchiamo <span className="highlight-text">videomaker</span>, <span className="highlight-text">filmmaker</span> e creativ* <span className="highlight-text">under 35</span>, <span className="highlight-text">residenti o domiciliat* a Torino e/o
-                            nell’area metropolitana torinese</span> per dare vita a opere filmiche che raccontino le tante
+                        Cerchiamo <span className="highlight-text">videomaker</span>, <span className="highlight-text">filmmaker</span> e creativ* per dare vita a opere filmiche che raccontino le tante
                         sfumature del quartiere: la sua multietnicità, le sue problematiche e le sue potenzialità,
                         le pratiche sociali e creative, le forme di convivenza e i <span className="highlight-text">futuri possibili</span>.
                     </p>

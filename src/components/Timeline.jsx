@@ -5,26 +5,26 @@ const Timeline = () => {
     // Consolidated data: coordinates match the SVG path 1000x600 viewBox
     const steps = [
         {
-            date: 'Gennaio 2026',
+            date: '8 Marzo 2026',
             title: 'Apertura call',
             x: 50, y: 50,
             textTop: '-5%', textLeft: '-2%'
         },
         {
-            date: '28 Febbraio 2026',
+            date: '15 Aprile 2026',
             title: 'Chiusura call',
             x: 200, y: 120,
             textTop: '8%', textLeft: '21%'
         },
         {
-            date: 'Febbraio 2026',
+            date: '1 Maggio 2026',
             title: 'Selezione dei team e comunicazione esiti',
             x: 400, y: 180,
             textTop: '31%', textLeft: '16%',
             textAlign: 'right'
         },
         {
-            date: 'Marzo 2026',
+            date: '4 Maggio 2026',
             title: 'Avvio residenza',
             x: 550, y: 300,
             textTop: '38%', textLeft: '56%'

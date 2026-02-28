@@ -35,10 +35,10 @@ const About = ({ onOpenPopup }) => {
                         <div className="bando-column">
                             <h4 className="column-title">Obiettivo della call</h4>
                             <p>
-                                La call invita <span className="highlight-text">registi</span>, <span className="highlight-text">videomaker</span>, <span className="highlight-text">filmmaker</span> e creativi <span className="highlight-text">under 35</span>, residenti o domiciliati a Torino e/o nell’area metropolitana torinese, a partecipare a una <span className="highlight-text">residenza artistica annuale</span> con l’obiettivo di realizzare cortometraggi dedicati a Barriera di Milano: la sua multietnicità, le sue problematiche e le sue potenzialità, le pratiche sociali e creative, le forme di convivenza e i futuri possibili.
+                                La call invita <span className="highlight-text">professionisti e professioniste del settore audiovisivo</span>, studenti o organizzatori, a partecipare a una <span className="highlight-text">residenza di ricerca territoriale</span> di un anno. L'obiettivo è la comprensione delle dinamiche sociali, urbane e umane legate al concetto di “barriera”, con particolare riferimento a Barriera di Milano (Torino), finalizzata alla realizzazione di forme di restituzione narrativa e audiovisiva.
                             </p>
                             <p>
-                                Parallelamente alla selezione dei team, verrà avviata una campagna digitale di raccolta di storie dal basso nel quartiere: testimonianze, ricordi, sogni, idee e frammenti di quotidianità condivisi dagli abitanti, per creare un archivio contemporaneo che alimenti il processo creativo e rafforzi il dialogo con chi vive Barriera.
+                                Il progetto mira anche alla costruzione di un vero e proprio <span className="highlight-text">archivio vivo</span>, uno spazio in cui possano confluire tutti i materiali raccolti, quali testimonianze, ricordi e visioni degli abitanti.
                             </p>
 
                             <h4 className="column-title">Temi e direzione editoriale</h4>
@@ -59,15 +59,12 @@ const About = ({ onOpenPopup }) => {
                         <div className="bando-column">
                             <h4 className="column-title">Chi può partecipare</h4>
                             <ul className="requirements-list">
-                                <li><strong>Singoli o team creativi</strong>. Il/la regista (o referente creativo) deve essere <span className="highlight-text">under 35</span> alla data di chiusura della call. Nel caso di candidatura in team, almeno il 50% dei componenti indicati in candidatura deve essere under 35.</li>
-                                <li>Residenti o domiciliati a Torino e/o nell’area metropolitana torinese.</li>
+                                <li><strong>Persone maggiorenni, singole o in team</strong>. Se ci si candida individualmente, si verrà inseriti in gruppi di lavoro multidisciplinari per valorizzare le competenze complementari. Altrimenti, è possibile candidarsi come gruppo già costituito.</li>
+                                <li>Disponibilità a lavorare in modo collaborativo e mettersi in gioco in un processo partecipativo.</li>
                             </ul>
                             <p className="small-text">
-                                Sono ammessi tutte le modalità narrative e i linguaggi: documentario, fiction, animazione, sperimentale, reportage.<br />
-                                La call è aperta anche ad autori emergenti e a persone con background non convenzionali. Saranno valutate positivamente le proposte che includono sguardi interculturali, di genere e generazionali.
-                            </p>
-                            <p className="highlight-note">
-                                Saranno selezionati fino a 4 team.
+                                Sono ammessi professionisti di ogni reparto (registi, sceneggiatori, fonici, montatori, videomaker ecc.) ma non è richiesto un livello specifico di esperienza: è fondamentale una conoscenza di base dei linguaggi audiovisivi.<br />
+                                Saranno valutate positivamente le proposte che sanno adottare uno sguardo decoloniale e includono prospettive interculturali, di genere e generazionali.
                             </p>
 
                             <h4 className="column-title">Come si presenta la candidatura</h4>
@@ -91,17 +88,17 @@ const About = ({ onOpenPopup }) => {
                     </div>
 
                     <div className="text-block full-width">
-                        <h4 className="column-title">Percorso / Impegno obbligatorio</h4>
+                        <h4 className="column-title">Percorso / Sostegno economico</h4>
                         <p>
-                            I team selezionati partecipano al percorso di residenza che include: incontro di avvio e co-progettazione, attività nel quartiere, revisione lavori, mentorship. È richiesta la consegna dei materiali intermedi e finali e la partecipazione ai momenti pubblici.
+                            I team selezionati partecipano a un percorso di residenza a tappe che include moduli formativi, esplorazioni urbane e sessioni di revisione. Oltre allo sviluppo del cortometraggio finale, ogni gruppo realizzerà micro-output intermedi.
                         </p>
                         <p>
-                            <strong>Produzione:</strong> L’associazione accompagna i team dallo sviluppo alla distribuzione. Supporto tecnico, logistico e organizzativo per una co-produzione dal basso.<br />
-                            <strong>Diritti:</strong> Gli autori mantengono i diritti morali. Associazione Gomboc ha ruolo di produzione e diffusione.
+                            <strong>Produzione e Finanziamento:</strong> Il percorso di residenza è sostenuto da un finanziamento complessivo fino a un massimo di <strong>3.000 €</strong> destinato ai gruppi selezionati per lo sviluppo. Sono inclusi supporto formativo e un corredo videografico messo a disposizione da Associazione Gomboc.<br />
+                            <strong>Diritti:</strong> Gli autori vengono riconosciuti nei credits, e l’associazione in qualità di produttore unico deterrà i diritti sull'opera prodotta e ne curerà la distribuzione. Per partecipare, le persone selezionate dovranno iscriversi all'Associazione Gomboc (5 euro).
                         </p>
 
                         <div className="cta-container">
-                            <p><strong>Scadenza: 28 Febbraio 2026</strong></p>
+                            <p><strong>Scadenza: 15 Aprile 2026</strong></p>
                             <a href="#" onClick={onOpenPopup} className="btn btn-primary">Compila il form di candidatura</a>
                         </div>
                     </div>
