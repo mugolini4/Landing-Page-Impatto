@@ -14,15 +14,17 @@
 }
 
 .popup-content {
-    background-color: #fff;
-    color: #1a1a1a;
-    /* Dark text for readability on white */
+    background-color: var(--color-bg);
+    background-image: url('../assets/texture-bg.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-secondary);
     padding: var(--spacing-md) var(--spacing-lg);
     border-radius: 12px;
     max-width: 90%;
     width: 450px;
     position: relative;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     text-align: center;
     border: 2px solid var(--color-accent);
 }
@@ -33,7 +35,7 @@
     right: 20px;
     font-size: 2rem;
     line-height: 1;
-    color: #1a1a1a;
+    color: var(--color-secondary);
     transition: color var(--transition-fast);
     padding: 0;
 }
@@ -44,14 +46,14 @@
 
 .popup-title {
     font-family: var(--font-heading);
-    color: #1a1a1a;
+    color: var(--color-secondary);
     font-size: 1.8rem;
     margin-bottom: var(--spacing-xs);
     margin-top: 10px;
 }
 
 .popup-description {
-    color: #666;
+    color: #e0e0e0;
     margin-bottom: var(--spacing-md);
     font-size: 1.1rem;
 }

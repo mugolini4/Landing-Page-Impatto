@@ -35,11 +35,11 @@ const Popup = ({ isOpen, onClose }) => {
                     Seleziona l'opzione corretta in base alla tua candidatura:
                 </p>
                 <div className="popup-options">
-                    <a href="https://example.com/individual" target="_blank" rel="noopener noreferrer" className="btn btn-primary popup-btn">
-                        Individualmente
-                    </a>
-                    <a href="https://example.com/team" target="_blank" rel="noopener noreferrer" className="btn btn-primary popup-btn popup-btn-outline">
+                    <a href="https://forms.gle/NpSuCvHMS5kGtLbw9" target="_blank" rel="noopener noreferrer" className="btn btn-primary popup-btn">
                         Con il mio team
+                    </a>
+                    <a href="https://forms.gle/J7JivcKQBcubkDt8A" target="_blank" rel="noopener noreferrer" className="btn btn-primary popup-btn popup-btn-outline">
+                        Individualmente
                     </a>
                 </div>
             </div>

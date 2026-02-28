@@ -71,9 +71,6 @@ const About = ({ onOpenPopup }) => {
                             <p>
                                 La candidatura deve essere presentata entro la data di chiusura della call compilando il <span className="highlight-text">form online ufficiale</span> e caricando i materiali richiesti. È possibile candidarsi come singolo/a o come team creativo; in caso di candidatura in team, è necessario indicare un/a referente che sarà il punto di contatto con l’organizzazione.
                             </p>
-                            <p className="small-text">
-                                La candidatura si considera valida solo se completa in tutte le sue parti e corredata dalla documentazione richiesta. L’Associazione si riserva di richiedere, in fase di verifica, documenti utili a confermare i requisiti dichiarati (età, residenza/domicilio) e di escludere le candidature incomplete o non conformi.
-                            </p>
 
                             <h4 className="column-title">Criteri di selezione</h4>
                             <p>I team verranno selezionati in base a:</p>

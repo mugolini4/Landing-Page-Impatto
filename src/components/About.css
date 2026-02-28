@@ -54,12 +54,14 @@
 }
 
 .column-title {
-    color: var(--color-accent);
-    font-size: 1.3rem;
+    color: var(--color-secondary);
+    font-size: 1.5rem;
     margin-bottom: var(--spacing-sm);
     margin-top: var(--spacing-md);
     text-transform: uppercase;
     letter-spacing: 1px;
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 8px dotted var(--color-accent);
 }
 
 .column-title:first-child {
@@ -77,13 +79,14 @@
     padding-left: 1.5rem;
     margin-bottom: 0.5rem;
     font-size: 1rem;
-    color: #d0d0d0;
+    color: white;
 }
 
 .feature-list li::before {
     content: '→';
     position: absolute;
     left: 0;
+    font-size: 1rem;
     color: var(--color-accent);
 }
 
@@ -96,7 +99,7 @@
 
 .small-text {
     font-size: 0.9rem;
-    color: #a0a0a0;
+    color: white;
     font-style: italic;
     margin-bottom: var(--spacing-sm);
 }
