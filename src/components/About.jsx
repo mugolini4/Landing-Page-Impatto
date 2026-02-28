@@ -1,6 +1,7 @@
 import './About.css'
 import ScrollingBanner from './ScrollingBanner'
 import './About.css'
+import CallToAction from './CallToAction'
 
 const About = ({ onOpenPopup }) => {
     return (
@@ -25,6 +26,14 @@ const About = ({ onOpenPopup }) => {
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <div style={{
+                textAlign: 'center',
+                padding: 'var(--spacing-md)',
+            }}>
+                <p style={{ marginBottom: 'var(--spacing-md)' }}><strong>Scadenza: 15 Aprile 2026</strong></p>
+                <a href="#" onClick={onOpenPopup} className="btn btn-primary">Compila il form di candidatura</a>
             </div>
 
             <ScrollingBanner direction="right" />
@@ -93,11 +102,14 @@ const About = ({ onOpenPopup }) => {
                             <strong>Produzione e Finanziamento:</strong> Il percorso di residenza è sostenuto da un finanziamento complessivo fino a un massimo di <strong>3.000 €</strong> destinato ai gruppi selezionati per lo sviluppo. Sono inclusi supporto formativo e un corredo videografico messo a disposizione da Associazione Gomboc.<br />
                             <strong>Diritti:</strong> Gli autori vengono riconosciuti nei credits, e l’associazione in qualità di produttore unico deterrà i diritti sull'opera prodotta e ne curerà la distribuzione. Per partecipare, le persone selezionate dovranno iscriversi all'Associazione Gomboc (5 euro).
                         </p>
+                    </div>
 
-                        <div className="cta-container">
-                            <p><strong>Scadenza: 15 Aprile 2026</strong></p>
-                            <a href="#" onClick={onOpenPopup} className="btn btn-primary">Compila il form di candidatura</a>
-                        </div>
+                    <div style={{
+                        textAlign: 'center',
+                        padding: 'var(--spacing-md)',
+                    }}>
+                        <p style={{ marginBottom: 'var(--spacing-md)' }}><strong>Scadenza: 15 Aprile 2026</strong></p>
+                        <a href="#" onClick={onOpenPopup} className="btn btn-primary">Compila il form di candidatura</a>
                     </div>
 
                 </div>

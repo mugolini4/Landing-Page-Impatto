@@ -113,7 +113,7 @@
 }
 
 .cta-container {
-    margin-top: var(--spacing-lg);
+    margin-top: var(--spacing-md);
     text-align: center;
     padding-top: var(--spacing-md);
 }
