@@ -11,50 +11,58 @@ const Timeline = () => {
             textTop: '-5%', textLeft: '-2%'
         },
         {
+            date: '10 Aprile 2026',
+            title: 'Vicinissima Festival - Evento di lancio della call',
+            x: 180, y: 120,
+            textTop: '20%', textLeft: '0%',
+            textAlign: 'left'
+        },
+        {
             date: '18 Aprile 2026',
             title: 'Chiusura call',
-            x: 150, y: 150,
-            textTop: '27%', textLeft: '5%'
+            x: 280, y: 220,
+            textTop: '31%', textLeft: '32%',
+            textAlign: 'right'
         },
         {
             date: '4 Maggio 2026',
             title: 'Selezione dei team e comunicazione degli esiti',
-            x: 350, y: 100,
-            textTop: '0%', textLeft: '20%',
+            x: 430, y: 130,
+            textTop: '2%', textLeft: '29%',
             textAlign: 'right'
         },
         {
             date: '10 Maggio 2026',
             title: 'Avvio residenza con primo incontro',
-            x: 500, y: 250,
-            textTop: '32%', textLeft: '51%'
+            x: 550, y: 280,
+            textTop: '38%', textLeft: '56%'
         },
         {
             date: 'Giugno-Luglio 2026',
             title: 'Primo evento di restituzione',
-            x: 350, y: 400,
-            textTop: '60%', textLeft: '10%',
+            x: 400, y: 450,
+            textTop: '68%', textLeft: '16%',
             textAlign: 'right'
         },
         {
             date: 'Novembre-Dicembre 2026',
             title: 'Secondo evento di restituzione',
-            x: 550, y: 500,
-            textTop: '85%', textLeft: '47%'
+            x: 650, y: 480,
+            textTop: '80%', textLeft: '68%'
         },
         {
             date: 'Aprile 2027',
             title: 'Consegna del progetto finale',
-            x: 750, y: 350,
-            textTop: '55%', textLeft: '78%',
-            textAlign: 'left'
+            x: 820, y: 350,
+            textTop: '48%', textLeft: '85%',
+            textAlign: 'center'
         },
         {
             date: 'Maggio 2027',
             title: 'Evento finale e restituzione pubblica',
-            x: 900, y: 500,
-            textTop: '85%', textLeft: '80%',
-            textAlign: 'center'
+            x: 950, y: 530,
+            textTop: '92%', textLeft: '80%',
+            textAlign: 'right'
         }
     ];
 
