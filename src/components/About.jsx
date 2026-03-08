@@ -9,20 +9,20 @@ const About = ({ onOpenPopup }) => {
             <div className="container">
                 <div className="about-content">
                     {/* Header */}
-                    <h2 className="section-title">Call to Action <span className="text-accent">BarriEra / BarriE’</span></h2>
+                    <h2 className="section-title">CALL TO ACTION <span className="text-accent">BarriERA / BarriÈ</span></h2>
                     <h3 className="section-subtitle">Residenza artistica per giovani registi | <span className="text-white">Barriera di Milano (Torino)</span></h3>
                     <div className="text-block">
                         <p>
-                            <span className="highlight-text">Barriera di Milano</span> è un quartiere che porta nel nome l’idea di confine, ma che nella vita quotidiana funziona più come un sistema di attraversamenti: lingue che si incrociano, generazioni che convivono, memorie che restano e visioni che spingono in avanti. <strong>BarriEra - BarriE’</strong> nasce da qui: dall’urgenza di trasformare il cinema in uno strumento di ascolto, di relazione e di restituzione.
+                            <span className="highlight-text">Barriera di Milano</span> è un quartiere che porta nel nome l’idea di confine, ma che nella vita quotidiana funziona più come un sistema di attraversamenti: lingue che si incrociano, generazioni che convivono, memorie che restano e visioni che spingono in avanti. <strong>BarriERA / BarriÈ</strong> nasce da qui: dall’urgenza di trasformare il cinema in uno strumento di ascolto, di relazione e di restituzione.
                         </p>
                         <p>
                             Non un racconto “da fuori”, non un reportage che si limita a osservare, ma un percorso che entra nel vivo del territorio, ne esplora le sfaccettature e prova a restituirne la complessità attraverso gli occhi di chi la vive, l'abita, la attraversa ogni giorno.
                         </p>
                         <p>
-                            L’approccio è <span className="highlight-text">decoloniale</span>: significa spostare lo sguardo, disimparare categorie predefinite, evitare narrazioni stereotipate e lasciare spazio a prospettive plurali. Barriera non è “periferia” da interpretare, ma centro di produzione di immaginario, un luogo dove le storie non si estraggono: si co-costruiscono.
+                            L’approccio è <span className="highlight-text">decoloniale</span>: significa spostare lo sguardo, disimparare categorie pre definite, evitare narrazioni stereotipate e lasciare spazio a prospettive plurali. Barriera non è “periferia” da interpretare, ma centro di produzione di immaginario, un luogo dove le storie non si estraggono: si co-costruiscono.
                         </p>
                         <p>
-                            <strong>BarriEra / BarriE’</strong> diventa così una residenza artistica e, insieme, un esperimento collettivo: una produzione dal basso che trasforma l’osservazione in partecipazione, e il set in uno spazio di relazione.
+                            <strong>BarriERA / BarriÈ</strong> diventa così una residenza artistica e, insieme, un esperimento collettivo: una produzione dal basso che trasforma l’osservazione in partecipazione, e il set in uno spazio di relazione.
                         </p>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ const About = ({ onOpenPopup }) => {
                 paddingTop: 'var(--spacing-md)',
                 paddingBottom: 'var(--spacing-md)',
             }}>
-                <p style={{ marginBottom: 'var(--spacing-md)' }}><strong>Scadenza: 15 Aprile 2026</strong></p>
+                <p style={{ marginBottom: 'var(--spacing-md)' }}><strong>Scadenza: 18 Aprile 2026</strong></p>
                 <a href="#" onClick={onOpenPopup} className="btn btn-primary">Compila il form di candidatura</a>
             </div>
 
@@ -61,9 +61,6 @@ const About = ({ onOpenPopup }) => {
                                 <li>Memorie e radici</li>
                                 <li>Pratiche sociali, ecologiche e creative</li>
                             </ul>
-                            <p>
-                                La residenza non richiede “un tema imposto”, ma una postura: la capacità di stare nel quartiere con attenzione, di fare spazio alle voci, di costruire relazione. Qui il cinema non serve a semplificare: serve a tenere insieme sfumature e contraddizioni, radici e possibilità, ricordo e futuro.
-                            </p>
                         </div>
 
                         <div className="bando-column">
@@ -110,7 +107,7 @@ const About = ({ onOpenPopup }) => {
                         paddingTop: 'var(--spacing-md)',
                         paddingBottom: 'var(--spacing-md)',
                     }}>
-                        <p style={{ marginBottom: 'var(--spacing-md)' }}><strong>Scadenza: 15 Aprile 2026</strong></p>
+                        <p style={{ marginBottom: 'var(--spacing-md)' }}><strong>Scadenza: 18 Aprile 2026</strong></p>
                         <a href="#" onClick={onOpenPopup} className="btn btn-primary">Compila il form di candidatura</a>
                     </div>
 

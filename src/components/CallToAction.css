@@ -15,11 +15,20 @@
     margin-bottom: var(--spacing-sm);
 }
 
-.footer-banner {
-    max-width: 100%;
-    height: auto;
+.footer-logos-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xl);
     margin-bottom: var(--spacing-lg);
-    opacity: 0.9;
+    width: 100%;
+}
+
+.footer-logo {
+    max-height: 65px;
+    width: auto;
+    object-fit: contain;
 }
 
 .cta-text {
@@ -74,6 +83,16 @@
         width: 100%;
         padding: 1rem 2rem;
         font-size: 1.1rem;
+    }
+
+    .footer-logos-row {
+        gap: var(--spacing-md);
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        max-height: 80px;
+        margin-bottom: var(--spacing-sm);
     }
 
     .footer-links {

@@ -19,7 +19,7 @@ const Hero = ({ onOpenPopup }) => {
                     <p className="hero-description">
                         è una residenza artistica e un progetto di produzione dal basso che ha un obiettivo:
                         raccontare il quartiere torinese di <span className="highlight-text">Barriera di Milano</span> attraverso storie che portino al centro
-                        del un luogo che è spesso alla periferia dello sguardo.
+                        di un luogo che è spesso alla periferia dello sguardo.
                     </p>
                     <p className="hero-description">
                         Cerchiamo <span className="highlight-text">videomaker</span>, <span className="highlight-text">filmmaker</span> e creativ* per dare vita a opere filmiche che raccontino le tante

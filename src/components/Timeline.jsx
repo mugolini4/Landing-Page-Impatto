@@ -11,36 +11,49 @@ const Timeline = () => {
             textTop: '-5%', textLeft: '-2%'
         },
         {
-            date: '15 Aprile 2026',
+            date: '18 Aprile 2026',
             title: 'Chiusura call',
-            x: 200, y: 120,
-            textTop: '8%', textLeft: '21%'
-        },
-        {
-            date: '1 Maggio 2026',
-            title: 'Selezione dei team e comunicazione esiti',
-            x: 400, y: 180,
-            textTop: '31%', textLeft: '16%',
-            textAlign: 'right'
+            x: 150, y: 150,
+            textTop: '27%', textLeft: '5%'
         },
         {
             date: '4 Maggio 2026',
-            title: 'Avvio residenza',
-            x: 550, y: 300,
-            textTop: '38%', textLeft: '56%'
-        },
-        {
-            date: 'Marzo 2027',
-            title: 'Consegna dei cortometraggi',
-            x: 750, y: 400,
-            textTop: '67%', textLeft: '49%',
+            title: 'Selezione dei team e comunicazione degli esiti',
+            x: 350, y: 100,
+            textTop: '0%', textLeft: '20%',
             textAlign: 'right'
         },
         {
+            date: '10 Maggio 2026',
+            title: 'Avvio residenza con primo incontro',
+            x: 500, y: 250,
+            textTop: '32%', textLeft: '51%'
+        },
+        {
+            date: 'Giugno-Luglio 2026',
+            title: 'Primo evento di restituzione',
+            x: 350, y: 400,
+            textTop: '60%', textLeft: '10%',
+            textAlign: 'right'
+        },
+        {
+            date: 'Novembre-Dicembre 2026',
+            title: 'Secondo evento di restituzione',
+            x: 550, y: 500,
+            textTop: '85%', textLeft: '47%'
+        },
+        {
+            date: 'Aprile 2027',
+            title: 'Consegna del progetto finale',
+            x: 750, y: 350,
+            textTop: '55%', textLeft: '78%',
+            textAlign: 'left'
+        },
+        {
             date: 'Maggio 2027',
-            title: 'Proiezione finale e restituzione pubblica',
-            x: 900, y: 550,
-            textTop: '93%', textLeft: '80%',
+            title: 'Evento finale e restituzione pubblica',
+            x: 900, y: 500,
+            textTop: '85%', textLeft: '80%',
             textAlign: 'center'
         }
     ];

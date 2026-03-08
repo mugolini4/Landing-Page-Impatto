@@ -13,7 +13,7 @@
     margin-bottom: var(--spacing-xs);
     font-size: 2.5rem;
     line-height: 1.1;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .section-subtitle {
