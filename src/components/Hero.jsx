@@ -28,7 +28,7 @@ const Hero = ({ onOpenPopup }) => {
                     </p>
                     <p>
                         Il progetto, della durata di un anno, è a cura di <a href="https://associazionegomboc.wixsite.com/gomboc" target="_blank" rel="noopener noreferrer" className="highlight-text" style={{ textDecoration: 'underline' }}>Associazione Gomboc</a> in collaborazione
-                        con <a href="https://fondazioneamendola.it/" target="_blank" rel="noopener noreferrer" className="highlight-text" style={{ textDecoration: 'underline' }}>Fondazione Amendola</a> nell’ambito di <span className="highlight-text">Ri-creiamo il giardino che vorrei</span>, il progetto
+                        con <a href="https://fondazioneamendola.it/" target="_blank" rel="noopener noreferrer" className="highlight-text" style={{ textDecoration: 'underline' }}>Fondazione Amendola</a> nell’ambito di <span className="highlight-text"><i>Ri-creiamo il giardino che vorrei</i></span>, il progetto
                         di rigenerazione urbana
                         del Giardino Giorgio Amendola.
                     </p>
