@@ -1,6 +1,7 @@
 .about-section {
     background-color: transparent;
     border-top: 0px solid rgba(255, 255, 255, 0.05);
+    text-align: left;
 }
 
 .about-content {
@@ -144,4 +145,50 @@
     .section-subtitle {
         font-size: 1rem;
     }
+}
+
+.download-icon-btn {
+    color: var(--color-primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color var(--transition-fast), transform var(--transition-fast);
+    padding: 0.5rem;
+}
+
+.download-icon-btn:hover {
+    color: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+/* Custom Tooltip */
+.custom-tooltip {
+    position: relative;
+}
+
+.custom-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 110%;
+    /* Place above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
+    pointer-events: none;
+    z-index: 10;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.custom-tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
 }

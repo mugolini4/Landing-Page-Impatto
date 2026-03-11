@@ -293,4 +293,10 @@
     padding: 0 4px;
     border-radius: 2px;
     font-weight: 700;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+a.highlight-text:hover {
+    background-color: var(--color-primary);
+    color: var(--color-accent);
 }

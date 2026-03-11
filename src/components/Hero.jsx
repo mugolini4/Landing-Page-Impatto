@@ -26,6 +26,12 @@ const Hero = ({ onOpenPopup }) => {
                         sfumature del quartiere: la sua multietnicità, le sue problematiche e le sue potenzialità,
                         le pratiche sociali e creative, le forme di convivenza e i <span className="highlight-text">futuri possibili</span>.
                     </p>
+                    <p>
+                        Il progetto, della durata di un anno, è a cura di <a href="https://associazionegomboc.wixsite.com/gomboc" target="_blank" rel="noopener noreferrer" className="highlight-text" style={{ textDecoration: 'underline' }}>Associazione Gomboc</a> in collaborazione
+                        con <a href="https://fondazioneamendola.it/" target="_blank" rel="noopener noreferrer" className="highlight-text" style={{ textDecoration: 'underline' }}>Fondazione Amendola</a> nell’ambito di <span className="highlight-text">Ri-creiamo il giardino che vorrei</span>, il progetto
+                        di rigenerazione urbana
+                        del Giardino Giorgio Amendola.
+                    </p>
                 </div>
 
                 {/* Scrolling Banner */}
@@ -40,7 +46,7 @@ const Hero = ({ onOpenPopup }) => {
                         <p className="map-overlay-text">come partecipare</p>
                         <ol className="participation-steps">
                             <li>
-                                <a href="#about" onClick={(e) => { e.preventDefault(); document.getElementById('about').scrollIntoView({ behavior: 'smooth' }) }} className="text-link">
+                                <a href="/Bando%20Barriera%20Barrie_V04.pdf" target="_blank" rel="noopener noreferrer" download="Bando_Barriera_Barrie_V04.pdf" className="text-link">
                                     Leggi il bando della residenza creativa
                                 </a>
                             </li>
@@ -57,7 +63,7 @@ const Hero = ({ onOpenPopup }) => {
                     <p>come partecipare</p>
                     <ol className="participation-steps">
                         <li>
-                            <a href="#about" onClick={(e) => { e.preventDefault(); document.getElementById('about').scrollIntoView({ behavior: 'smooth' }) }} className="text-link">
+                            <a href="/Bando%20Barriera%20Barrie_V04.pdf" target="_blank" rel="noopener noreferrer" download="Bando_Barriera_Barrie_V04.pdf" className="text-link">
                                 Leggi il bando della residenza creativa
                             </a>
                         </li>

@@ -42,6 +42,14 @@
     font-weight: 300;
 }
 
+.timeline-item.interactive-step {
+    transition: transform var(--transition-fast);
+}
+
+.timeline-item.interactive-step:hover {
+    transform: scale(1.05);
+}
+
 .timeline-title {
     display: block;
     font-family: var(--font-heading);

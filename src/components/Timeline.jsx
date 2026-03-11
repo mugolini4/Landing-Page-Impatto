@@ -21,8 +21,8 @@ const Timeline = () => {
             date: '18 Aprile 2026',
             title: 'Chiusura call',
             x: 280, y: 220,
-            textTop: '31%', textLeft: '32%',
-            textAlign: 'right'
+            textTop: '38%', textLeft: '25%',
+            textAlign: 'left'
         },
         {
             date: '4 Maggio 2026',
@@ -48,7 +48,7 @@ const Timeline = () => {
             date: 'Novembre-Dicembre 2026',
             title: 'Secondo evento di restituzione',
             x: 650, y: 480,
-            textTop: '80%', textLeft: '68%'
+            textTop: '81%', textLeft: '58%'
         },
         {
             date: 'Aprile 2027',
@@ -71,6 +71,7 @@ const Timeline = () => {
     const dotsRef = useRef([]);
     const thresholds = useRef([]);
     const [pathLength, setPathLength] = useState(0);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     // Generate path data "M x1 y1 L x2 y2 ..."
     const pathData = steps.reduce((acc, step, i) => {
@@ -148,6 +149,19 @@ const Timeline = () => {
         };
     }, [pathLength]);
 
+    // Prevent scrolling when modal is open
+    useEffect(() => {
+        if (isModalOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isModalOpen]);
+
     return (
         <section className="timeline-section section" ref={timelineRef}>
             <div className="container timeline-container">
@@ -186,38 +200,85 @@ const Timeline = () => {
                     </svg>
 
                     {/* Text Positioning: varied positions around the dots */}
-                    {steps.map((step, index) => (
-                        <div
-                            key={index}
-                            className="timeline-item"
-                            style={{
-                                top: step.textTop,
-                                left: step.textLeft,
-                                textAlign: step.textAlign || 'left' // Default left aligned
-                            }}
-                        >
-                            <span className="timeline-date">{step.date}</span>
-                            <span className="timeline-title text-accent">{step.title}</span>
-                        </div>
-                    ))}
+                    {steps.map((step, index) => {
+                        const isInteractive = step.title.includes('Vicinissima Festival');
+                        return (
+                            <div
+                                key={index}
+                                className={`timeline-item ${isInteractive ? 'interactive-step' : ''}`}
+                                style={{
+                                    top: step.textTop,
+                                    left: step.textLeft,
+                                    textAlign: step.textAlign || 'left', // Default left aligned
+                                    cursor: isInteractive ? 'pointer' : 'default'
+                                }}
+                                onClick={() => isInteractive && setIsModalOpen(true)}
+                            >
+                                <span className="timeline-date">{step.date}</span>
+                                <span className="timeline-title text-accent">
+                                    {isInteractive && <u>{step.title}</u>}
+                                    {!isInteractive && step.title}
+                                    {isInteractive && <span className="info-icon" style={{ marginLeft: '8px', fontSize: '1.4em' }}>🎬️️</span>}
+                                </span>
+                            </div>
+                        );
+                    })}
                 </div>
 
                 {/* Mobile View (Vertical List) */}
                 <div className="timeline-mobile">
-                    {steps.map((step, index) => (
-                        <div key={index} className="timeline-mobile-item">
-                            <div className="timeline-mobile-line">
-                                <div className="timeline-dot"></div>
-                                {index !== steps.length - 1 && <div className="timeline-connector"></div>}
+                    {steps.map((step, index) => {
+                        const isInteractive = step.title.includes('Vicinissima Festival');
+                        return (
+                            <div key={index} className="timeline-mobile-item">
+                                <div className="timeline-mobile-line">
+                                    <div className="timeline-dot"></div>
+                                    {index !== steps.length - 1 && <div className="timeline-connector"></div>}
+                                </div>
+                                <div
+                                    className={`timeline-mobile-content ${isInteractive ? 'interactive-step' : ''}`}
+                                    style={{ cursor: isInteractive ? 'pointer' : 'default' }}
+                                    onClick={() => isInteractive && setIsModalOpen(true)}
+                                >
+                                    <span className="timeline-date">{step.date}</span>
+                                    <span className="timeline-title text-accent">
+                                        {step.title}
+                                        {isInteractive && <span className="info-icon" style={{ marginLeft: '6px', fontSize: '0.9em' }}>ℹ️</span>}
+                                    </span>
+                                </div>
                             </div>
-                            <div className="timeline-mobile-content">
-                                <span className="timeline-date">{step.date}</span>
-                                <span className="timeline-title text-accent">{step.title}</span>
-                            </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
+
+            {/* Vicinissima Modal */}
+            {isModalOpen && (
+                <div className="popup-backdrop" onClick={(e) => {
+                    if (e.target.className === 'popup-backdrop') setIsModalOpen(false);
+                }}>
+                    <div className="popup-content" style={{ maxWidth: '900px', width: '90%', textAlign: 'justify' }}>
+                        <button className="popup-close-btn" onClick={() => setIsModalOpen(false)} aria-label="Close">
+                            &times;
+                        </button>
+                        <h2 className="popup-title" style={{ marginTop: '0', marginBottom: 'var(--spacing-md)', fontSize: '1.5rem' }}>Vicinissima Festival</h2>
+                        <div className="popup-description" style={{ color: '#e0e0e0', fontSize: '0.95rem', lineHeight: '1.6', maxHeight: '60vh', overflowY: 'auto', paddingRight: '10px' }}>
+                            <p style={{ marginBottom: '1rem' }}>
+                                <b>Vicinissima Festival</b> è il ciclo di eventi aperti al pubblico con cui il progetto di residenza artistica <strong>BarriERA / BarriÈ</strong> contribuirà all’offerta culturale del Giardino Giorgio Amendola, nell’ambito del progetto di rigenerazione urbana <b><em>Ri-creiamo il giardino che vorrei</em></b>.
+                            </p>
+                            <p style={{ marginBottom: '1rem' }}>
+                                Il nome gioca con il superlativo tipico di molti eventi torinesi e lo reinterpreta in una dimensione più intima: un evento piccolo nelle dimensioni ma <b>profondamente radicato nel territorio</b>, nato per raccontare un quartiere e raccogliere le storie di chi lo vive e di chi lo immagina, un appuntamento che - più che un festival tradizionale - diventa l’occasione per trasformare il giardino in uno spazio di incontro e condivisione, attraverso il linguaggio del cinema.
+                            </p>
+                            <p style={{ marginBottom: '1rem' }}>
+                                Vicinissima accompagnerà l’intero percorso di residenza artistica e ospiterà le restituzioni - intermedie e finali - dei gruppi di lavoro coinvolti, così che la comunità possa conoscere e seguire da vicino i processi creativi sviluppati durante il progetto.
+                            </p>
+                            <p>
+                                Le restituzioni saranno affiancate anche da una piccola programmazione di <b>cortometraggi indipendenti della scena torinese</b>, selezionati tramite call dedicate, e da momenti di incontro e confronto aperti a tutto il quartiere, così da costruire insieme uno spazio inedito di dialogo tra artisti, pubblico e territorio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            )}
         </section>
     );
 };

@@ -9,7 +9,22 @@ const About = ({ onOpenPopup }) => {
             <div className="container">
                 <div className="about-content">
                     {/* Header */}
-                    <h2 className="section-title">CALL TO ACTION <span className="text-accent">BarriERA / BarriÈ</span></h2>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', flexWrap: 'wrap', gap: '10px' }}>
+                        <h2 className="section-title" style={{ margin: 0 }}>CALL TO ACTION <span className="text-accent">BarriERA / BarriÈ</span></h2>
+                        <a
+                            href="/Bando%20Barriera%20Barrie_V04.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download="Bando_Barriera_Barrie_V04.pdf"
+                            className="download-icon-btn custom-tooltip"
+                            data-tooltip="Scarica il bando in PDF"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                            </svg>
+                        </a>
+                    </div>
                     <h3 className="section-subtitle">Residenza artistica per giovani registi | <span className="text-white">Barriera di Milano (Torino)</span></h3>
                     <div className="text-block">
                         <p>
@@ -76,10 +91,14 @@ const About = ({ onOpenPopup }) => {
 
                             <h4 className="column-title">Come si presenta la candidatura</h4>
                             <p>
-                                La candidatura deve essere presentata entro la data di chiusura della call compilando il <span className="highlight-text">form online ufficiale</span> e caricando i materiali richiesti. È possibile candidarsi come singolo/a o come team creativo; in caso di candidatura in team, è necessario indicare un/a referente che sarà il punto di contatto con l’organizzazione.
+                                La candidatura deve essere presentata entro la data di chiusura della call compilando il{' '}
+                                <a href="#" onClick={onOpenPopup} className="highlight-text" style={{ textDecoration: 'underline', cursor: 'pointer' }}>
+                                    form online ufficiale
+                                </a>
+                                {' '}e caricando i materiali richiesti. È possibile candidarsi come singolo/a o come team creativo; in caso di candidatura in team, è necessario indicare un/a referente che sarà il punto di contatto con l’organizzazione.
                             </p>
 
-                            <h4 className="column-title">Criteri di selezione</h4>
+                            {/*<h4 className="column-title">Criteri di selezione</h4>
                             <p>I team verranno selezionati in base a:</p>
                             <ul className="feature-list">
                                 <li>Aderenza ai temi e legame con Barriera di Milano</li>
@@ -87,7 +106,7 @@ const About = ({ onOpenPopup }) => {
                                 <li>Sguardo non stereotipato e approccio decoloniale</li>
                                 <li>Relazione con il territorio (ascolto, coinvolgimento, restituzione)</li>
                                 <li>Solidità del team e sostenibilità produttiva</li>
-                            </ul>
+                            </ul>*/}
                         </div>
                     </div>
 
