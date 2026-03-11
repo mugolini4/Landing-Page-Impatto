@@ -242,8 +242,9 @@ const Timeline = () => {
                                 >
                                     <span className="timeline-date">{step.date}</span>
                                     <span className="timeline-title text-accent">
-                                        {step.title}
-                                        {isInteractive && <span className="info-icon" style={{ marginLeft: '6px', fontSize: '0.9em' }}>ℹ️</span>}
+                                        {isInteractive && <u>{step.title}</u>}
+                                        {!isInteractive && step.title}
+                                        {isInteractive && <span className="info-icon" style={{ marginLeft: '6px', fontSize: '1.4em' }}>🎬</span>}
                                     </span>
                                 </div>
                             </div>

@@ -12,10 +12,10 @@ const About = ({ onOpenPopup }) => {
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', flexWrap: 'wrap', gap: '10px' }}>
                         <h2 className="section-title" style={{ margin: 0 }}>CALL TO ACTION <span className="text-accent">BarriERA / BarriÈ</span></h2>
                         <a
-                            href="/Bando%20Barriera%20Barrie_V04.pdf"
+                            href="Bando%20Barriera%20Barrie_V04.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
-                            download="Bando_Barriera_Barrie_V04.pdf"
+                            download="Bando_Barriera_Barrie.pdf"
                             className="download-icon-btn custom-tooltip"
                             data-tooltip="Scarica il bando in PDF"
                         >
