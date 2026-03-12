@@ -17,9 +17,8 @@ const Hero = ({ onOpenPopup }) => {
                 {/* Text Paragraph - Second Element */}
                 <div className="hero-text-container fade-in-up delay-1">
                     <p className="hero-description">
-                        è una residenza artistica e un progetto di produzione dal basso che ha un obiettivo:
-                        raccontare il quartiere torinese di <span className="highlight-text">Barriera di Milano</span> attraverso storie che portino al centro
-                        di un luogo che è spesso alla periferia dello sguardo.
+                        BarriERA / BarriÈ è una residenza artistica di ricerca territoriale finalizzata alla
+                        narrazione audiovisiva del quartiere torinese di <span className="highlight-text">Barriera di Milano</span>.
                     </p>
                     <p className="hero-description">
                         Cerchiamo <span className="highlight-text">videomaker</span>, <span className="highlight-text">filmmaker</span> e creativ* per dare vita a opere filmiche che raccontino le tante

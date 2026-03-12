@@ -268,13 +268,7 @@ const Timeline = () => {
                                 <b>Vicinissima Festival</b> è il ciclo di eventi aperti al pubblico con cui il progetto di residenza artistica <strong>BarriERA / BarriÈ</strong> contribuirà all’offerta culturale del Giardino Giorgio Amendola, nell’ambito del progetto di rigenerazione urbana <b><em>Ri-creiamo il giardino che vorrei</em></b>.
                             </p>
                             <p style={{ marginBottom: '1rem' }}>
-                                Il nome gioca con il superlativo tipico di molti eventi torinesi e lo reinterpreta in una dimensione più intima: un evento piccolo nelle dimensioni ma <b>profondamente radicato nel territorio</b>, nato per raccontare un quartiere e raccogliere le storie di chi lo vive e di chi lo immagina, un appuntamento che - più che un festival tradizionale - diventa l’occasione per trasformare il giardino in uno spazio di incontro e condivisione, attraverso il linguaggio del cinema.
-                            </p>
-                            <p style={{ marginBottom: '1rem' }}>
-                                Vicinissima accompagnerà l’intero percorso di residenza artistica e ospiterà le restituzioni - intermedie e finali - dei gruppi di lavoro coinvolti, così che la comunità possa conoscere e seguire da vicino i processi creativi sviluppati durante il progetto.
-                            </p>
-                            <p>
-                                Le restituzioni saranno affiancate anche da una piccola programmazione di <b>cortometraggi indipendenti della scena torinese</b>, selezionati tramite call dedicate, e da momenti di incontro e confronto aperti a tutto il quartiere, così da costruire insieme uno spazio inedito di dialogo tra artisti, pubblico e territorio.
+                                Il nome gioca con il superlativo tipico di molti eventi torinesi e lo reinterpreta in una dimensione più intima: un evento piccolo nelle dimensioni ma <b>profondamente radicato nel territorio</b>, nato per raccontare un quartiere e raccogliere le storie di chi lo vive e di chi lo immagina
                             </p>
                         </div>
                     </div>
