@@ -12,7 +12,7 @@ const About = ({ onOpenPopup }) => {
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', flexWrap: 'wrap', gap: '10px' }}>
                         <h2 className="section-title" style={{ margin: 0 }}>CALL TO ACTION <span className="text-accent">BarriERA / BarriÈ</span></h2>
                         <a
-                            href="Bando%20Barriera%20Barrie_V04.pdf"
+                            href="/Bando_Call4Entries_Barriera_Barrie_140326.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             download="Bando_Barriera_Barrie.pdf"
@@ -35,7 +35,7 @@ const About = ({ onOpenPopup }) => {
                         </p>
                         <p>
                             Durante la residenza, che si svolgerà <span className="highlight-text">tra Maggio 2026 e Maggio 2027</span>, i partecipanti selezionati saranno invitati a vivere e attraversare il territorio, prendendo parte a incontri, passeggiate urbane, momenti di ascolto e confronto con la comunità locale.
-                            <br/>
+                            <br />
                             Da questo processo prenderà forma un insieme di restituzioni audiovisive, sviluppate nel corso del progetto come esito diretto della ricerca sul campo e come strumenti di condivisione con il territorio.
                         </p>
                         <p>

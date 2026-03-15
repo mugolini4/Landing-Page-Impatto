@@ -45,7 +45,7 @@ const Hero = ({ onOpenPopup }) => {
                         <p className="map-overlay-text">come partecipare</p>
                         <ol className="participation-steps">
                             <li>
-                                <a href="/Bando%20Barriera%20Barrie_V04.pdf" target="_blank" rel="noopener noreferrer" download="Bando_Barriera_Barrie.pdf" className="text-link">
+                                <a href="/Bando_Call4Entries_Barriera_Barrie_140326.pdf" target="_blank" rel="noopener noreferrer" download="Bando_Barriera_Barrie.pdf" className="text-link">
                                     Leggi il bando della residenza creativa
                                 </a>
                             </li>
@@ -62,7 +62,7 @@ const Hero = ({ onOpenPopup }) => {
                     <p>come partecipare</p>
                     <ol className="participation-steps">
                         <li>
-                            <a href="/Bando%20Barriera%20Barrie_V04.pdf" target="_blank" rel="noopener noreferrer" download="Bando_Barriera_Barrie.pdf" className="text-link">
+                            <a href="/Bando_Call4Entries_Barriera_Barrie_140326.pdf" target="_blank" rel="noopener noreferrer" download="Bando_Barriera_Barrie.pdf" className="text-link">
                                 Leggi il bando della residenza creativa
                             </a>
                         </li>
