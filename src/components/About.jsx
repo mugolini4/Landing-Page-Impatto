@@ -62,7 +62,7 @@ const About = ({ onOpenPopup }) => {
                         <div className="bando-column">
                             <h4 className="column-title">Obiettivo della call</h4>
                             <p>
-                                La call invita <span className="highlight-text">professionisti e professioniste del settore audiovisivo</span>, a partecipare a una <span className="highlight-text">residenza di ricerca territoriale</span> di un anno, finalizzata al racconto di Barriera di Milano attraverso il linguaggio audiovisivo.
+                                La call invita <span className="highlight-text">figure del settore audiovisivo</span>, a partecipare a una <span className="highlight-text">residenza di ricerca territoriale</span> di un anno, finalizzata al racconto di Barriera di Milano attraverso il linguaggio audiovisivo.
                             </p>
                             <p>
                                 Il progetto mira anche alla costruzione di un vero e proprio <span className="highlight-text">archivio vivo</span>, uno spazio in cui possano confluire tutti i materiali raccolti, quali testimonianze, ricordi e visioni degli abitanti.
@@ -86,7 +86,7 @@ const About = ({ onOpenPopup }) => {
                                 <li><strong>Persone maggiorenni, singole o in team</strong>. Se ci si candida individualmente, si verrà inseriti in gruppi di lavoro multidisciplinari per valorizzare le competenze complementari. Altrimenti, è possibile candidarsi come gruppo già costituito.</li>
                             </ul>
                             <p className="small-text">
-                                Sono ammess* professioniste e professionisti di ogni reparto (regist*, sceneggiatori e sceneggiatrici, fonic*, montatori e montatrici, videomaker ecc.) ma non è richiesto un livello specifico di esperienza: è fondamentale una conoscenza di base dei linguaggi audiovisivi.<br />
+                                Sono ammess* figure del settore audiovisivo di ogni reparto (regist*, sceneggiatori e sceneggiatrici, fonic*, montatori e montatrici, videomaker ecc.) ma non è richiesto un livello specifico di esperienza: è fondamentale una conoscenza di base dei linguaggi audiovisivi.<br />
                             </p>
 
                             <h4 className="column-title">Come si presenta la candidatura</h4>
