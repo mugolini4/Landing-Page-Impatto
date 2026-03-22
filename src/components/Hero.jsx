@@ -21,7 +21,7 @@ const Hero = ({ onOpenPopup }) => {
                         narrazione audiovisiva del quartiere torinese di <span className="highlight-text">Barriera di Milano</span>.
                     </p>
                     <p className="hero-description">
-                        Cerchiamo <span className="highlight-text">videomaker</span>, <span className="highlight-text">filmmaker</span> e creativ* per dare vita a opere filmiche che raccontino le tante
+                        Cerchiamo <span className="highlight-text">videomaker</span>, <span className="highlight-text">filmmaker</span> e <span className="highlight-text">creativ*</span> per dare vita a opere filmiche che raccontino le tante
                         sfumature del quartiere: la sua multietnicità, le sue problematiche e le sue potenzialità,
                         le pratiche sociali e creative, le forme di convivenza e i <span className="highlight-text">futuri possibili</span>.
                     </p>
