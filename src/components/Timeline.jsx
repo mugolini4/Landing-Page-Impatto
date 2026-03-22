@@ -266,26 +266,26 @@ const Timeline = () => {
                 <div className="popup-backdrop" onClick={(e) => {
                     if (e.target.className === 'popup-backdrop') setIsModalOpen(false);
                 }}>
-                    <div className="popup-content fade-in-up" style={{ maxWidth: '900px', width: '90%', textAlign: 'justify' }}>
+                    <div className="popup-content slide-in-catchy" style={{ maxWidth: '900px', width: '90%', textAlign: 'justify' }}>
                         <button className="popup-close-btn" onClick={() => setIsModalOpen(false)} aria-label="Close">
                             &times;
                         </button>
                         <h2 className="popup-title" style={{ marginTop: '0', marginBottom: 'var(--spacing-md)', fontSize: '1.5rem' }}> <span style={{ fontSize: '2rem', marginRight: '8px' }}>🎬️️</span> Vicinissima Festival - <i><span style={{ fontWeight: '100' }}>inviaci il tuo corto!</span></i></h2>
-                        <div className="popup-description" style={{ color: '#e0e0e0', fontSize: '0.95rem', lineHeight: '1.6', maxHeight: '60vh', paddingRight: '10px' }}>
+                        <div className="popup-description" style={{ color: '#e0e0e0', fontSize: '1rem', lineHeight: '1.6', maxHeight: '55vh', overflowY: 'auto', paddingRight: '10px', marginBottom: '1rem' }}>
                             <p style={{ marginBottom: '1rem' }}>
                                 <b><span className="highlight-text">Vicinissima Festival</span></b> è il ciclo di eventi aperti al pubblico con cui il progetto di residenza artistica <strong>BarriERA / BarriÈ</strong> contribuirà all’offerta culturale del Giardino Giorgio Amendola, nell’ambito del progetto di rigenerazione urbana <b><em>Ri-creiamo il giardino che vorrei</em></b>.
                             </p>
                             <p style={{ marginBottom: '1rem' }}>
-                                Il nome gioca con il superlativo tipico di molti eventi torinesi e lo reinterpreta in una dimensione più intima: un evento piccolo nelle dimensioni ma <b>profondamente radicato nel territorio</b>, nato per raccontare un quartiere e raccogliere le storie di chi lo vive e di chi lo immagina
-                            </p>
-                            <p style={{ marginBottom: '1rem' }}>
                                 <span className="highlight-text">Cerchiamo produzioni indipendenti</span> per il primo appuntamento di Vicinissima Festival: <span className="highlight-text">partecipa con il tuo cortometraggio!</span>
                             </p>
-                            <div style={{ textAlign: 'center', marginTop: '1.5rem', marginBottom: '1rem' }}>
-                                <a href="https://forms.gle/Mweghht1atrxL7KTA" target="_blank" rel="noopener noreferrer" className="btn btn-primary popup-btn">
-                                    INVIACI IL TUO CORTO!
-                                </a>
-                            </div>
+                            <p style={{ marginBottom: '1rem' }}>
+                                Il nome gioca con il superlativo tipico di molti eventi torinesi e lo reinterpreta in una dimensione più intima: un evento piccolo nelle dimensioni ma <b>profondamente radicato nel territorio</b>, nato per raccontare un quartiere e raccogliere le storie di chi lo vive e di chi lo immagina
+                            </p>
+                        </div>
+                        <div style={{ textAlign: 'center', marginTop: '1rem' }}>
+                            <a href="https://forms.gle/Mweghht1atrxL7KTA" target="_blank" rel="noopener noreferrer" className="btn btn-primary popup-btn">
+                                INVIACI IL TUO CORTO!
+                            </a>
                         </div>
                     </div>
                 </div>
