@@ -1,5 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Timeline.css';
+import vfFloatingImg1 from '../assets/colophon/VF_floating_website_v3.png';
+import vfFloatingImg2 from '../assets/colophon/VF_floating_website_v4.png';
+import vVisual from '../assets/v-visual.png';
 
 const Timeline = () => {
     // Consolidated data: coordinates match the SVG path 1000x600 viewBox
@@ -270,7 +273,9 @@ const Timeline = () => {
                         <button className="popup-close-btn" onClick={() => setIsModalOpen(false)} aria-label="Close">
                             &times;
                         </button>
-                        <h2 className="popup-title" style={{ marginTop: '0', marginBottom: 'var(--spacing-md)', fontSize: '1.5rem' }}> <span style={{ fontSize: '2rem', marginRight: '8px' }}>🎬️️</span> Vicinissima Festival - <i><span style={{ fontWeight: '100' }}>inviaci il tuo corto!</span></i></h2>
+                        <h2 className="popup-title" style={{ marginTop: '0', marginBottom: 'var(--spacing-md)', fontSize: '1.5rem' }}> <span style={{ fontSize: '2rem', marginRight: '8px' }}>🎬️️</span> Vicinissima Festival
+                            <br /><i><span style={{ fontWeight: '100' }}>17 Aprile 2026</span></i>
+                        </h2>
                         <div className="popup-description" style={{ color: '#e0e0e0', fontSize: '1rem', lineHeight: '1.6', maxHeight: '55vh', overflowY: 'auto', paddingRight: '10px', marginBottom: '1rem' }}>
                             <p style={{ marginBottom: '1rem' }}>
                                 <b><span className="highlight-text">Vicinissima Festival</span></b> è il ciclo di eventi aperti al pubblico con cui il progetto di residenza artistica <strong>BarriERA / BarriÈ</strong> contribuirà all’offerta culturale del Giardino Giorgio Amendola, nell’ambito del progetto di rigenerazione urbana <b><em>Ri-creiamo il giardino che vorrei</em></b>.
@@ -279,17 +284,42 @@ const Timeline = () => {
                                 <span className="highlight-text">Cerchiamo produzioni indipendenti</span> per il primo appuntamento di Vicinissima Festival: <span className="highlight-text">partecipa con il tuo cortometraggio!</span>
                             </p>
                             <p style={{ marginBottom: '1rem' }}>
-                                Il nome gioca con il superlativo tipico di molti eventi torinesi e lo reinterpreta in una dimensione più intima: un evento piccolo nelle dimensioni ma <b>profondamente radicato nel territorio</b>, nato per raccontare un quartiere e raccogliere le storie di chi lo vive e di chi lo immagina
+                                Hai tempo fino a mercoledì <span className="highlight-text">8 Aprile 2026</span> per inviarci il tuo cortometraggio!
                             </p>
                         </div>
-                        <div style={{ textAlign: 'center', marginTop: '1rem' }}>
-                            <a href="https://forms.gle/Mweghht1atrxL7KTA" target="_blank" rel="noopener noreferrer" className="btn btn-primary popup-btn">
+                        <div style={{ textAlign: 'center', marginTop: '1rem', display: 'flex', gap: '0.5rem', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
+                            <a href="https://forms.gle/Mweghht1atrxL7KTA" target="_blank" rel="noopener noreferrer" className="btn btn-primary popup-btn" style={{ width: 'auto' }}>
                                 INVIACI IL TUO CORTO!
+                            </a>
+                            <a
+                                href="/Bando_Vicinissima_Festival.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                download="Bando_Vicinissima_Festival.pdf"
+                                className="download-icon-btn custom-tooltip"
+                                style={{ marginLeft: '20px' }}
+                                data-tooltip="Scarica il bando in PDF"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                                    <title>Scarica il bando in PDF</title>
+                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                </svg>
                             </a>
                         </div>
                     </div>
                 </div>
             )}
+
+            {/* Floating Vicinissima Button */}
+            <div
+                className="floating-vicinissima-btn slide-in-catchy"
+                onClick={() => setIsModalOpen(true)}
+                title="Vicinissima Festival"
+            >
+                <img src={vVisual} alt="" className="vf-spinning-ring" />
+                <img src={vfFloatingImg2} alt="Vicinissima Festival" className="vf-logo" />
+            </div>
         </section>
     );
 };

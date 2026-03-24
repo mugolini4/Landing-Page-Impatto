@@ -152,3 +152,64 @@
         font-size: 1.25rem;
     }
 }
+
+/* Floating Vicinissima Button */
+.floating-vicinissima-btn {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+    width: 180px;
+    height: 180px;
+    transition: transform var(--transition-fast);
+    animation-delay: 1.5s;
+}
+
+.floating-vicinissima-btn img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.vf-spinning-ring {
+    animation: spinRing 20s linear infinite;
+    transform-origin: center center;
+    scale: 0.9;
+    z-index: 0;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));
+}
+
+.vf-logo {
+    z-index: 1;
+}
+
+@keyframes spinRing {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.floating-vicinissima-btn:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+@media (max-width: 768px) {
+    .floating-vicinissima-btn {
+        width: 100px;
+        top: auto;
+        bottom: -30px;
+        right: -10px;
+    }
+
+    .vf-spinning-ring {
+        scale: 1.1;
+    }
+}
