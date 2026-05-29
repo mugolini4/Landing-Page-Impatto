@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Timeline.css';
 import vfFloatingImg1 from '../assets/colophon/VF_floating_website_v3.png';
 import vfFloatingImg2 from '../assets/colophon/VF_floating_website_v4.png';
-import vVisual from '../assets/v-visual.png';
+import vVisual from '../assets/v-visual-2.png';
 
 const Timeline = () => {
     // Consolidated data: coordinates match the SVG path 1000x600 viewBox
