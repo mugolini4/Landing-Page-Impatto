@@ -77,12 +77,12 @@ const Timeline = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     // Auto-open Vicinissima modal on mount with a smooth delay
-    useEffect(() => {
+    /*useEffect(() => {
         const timer = setTimeout(() => {
             setIsModalOpen(true);
         }, 1200); // 1.2s delay
         return () => clearTimeout(timer);
-    }, []);
+    }, []);*/
 
     // Generate path data "M x1 y1 L x2 y2 ..."
     const pathData = steps.reduce((acc, step, i) => {
@@ -312,14 +312,14 @@ const Timeline = () => {
             )}
 
             {/* Floating Vicinissima Button */}
-            <div
+            {/* <div
                 className="floating-vicinissima-btn slide-in-catchy"
                 onClick={() => setIsModalOpen(true)}
                 title="Vicinissima Festival"
             >
                 <img src={vVisual} alt="" className="vf-spinning-ring" />
                 <img src={vfFloatingImg2} alt="Vicinissima Festival" className="vf-logo" />
-            </div>
+            </div> */}
         </section>
     );
 };
